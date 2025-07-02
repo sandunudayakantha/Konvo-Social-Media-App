@@ -1,17 +1,13 @@
 import { Text, View , TouchableOpacity} from "react-native";
 import { styles } from "../styles/auth.styles";
-
+import { Link } from "expo-router";
 export default function Index() {
   return (
     <View
       style={styles.container}>
-     <Text style={styles.title}>hello
+    <Link href="/notification">visit notifications</Link>
 
-     </Text>
-
-     <TouchableOpacity onPress={()=> alert("yu tuched")}>
-      <Text>touch me</Text>
-     </TouchableOpacity>
+     
     </View>
   );
 }
